@@ -1,7 +1,15 @@
 Treehouse::Application.routes.draw do
   devise_for :users
 
+  devise_scope :user do
+   get 'register', to: 'devise/registrations#new', as: :register
+   get 'sign_in', to: 'devise/sessions#new', as: :sign_in
+   get 'edit_user', to: 'devise/registrations#edit', as: :edit_user
+   get 'log_out', to: 'devise/sessions#destroy', as: :log_out
+  end
+
   resources :statuses
+  get 'feed', to: 'statuses#index', as: :feed
   root to: 'statuses#index'
 
 
