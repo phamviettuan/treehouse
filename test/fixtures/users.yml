@@ -3,3 +3,9 @@ tuan:
   last_name: "Pham"
   email: "tuanp1711@gmail.com"
   profile_name: "tuanpham"
+
+tuan1:
+  first_name: "tuan1"
+  last_name: "pham1"
+  email: "tuanpham_2012@yahoo.com"
+  profile_name: "tuanpham1"
