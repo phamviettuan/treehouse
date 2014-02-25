@@ -21,3 +21,11 @@
   </div>
 </div>
 <% end %>
+
+<div class="status">
+	<% if user_signed_in? %>
+	   <span class="message">You are signed in.</span>
+	<% else %>
+	   <span class="message">You are NOT signed in.</span>
+	<% end %>
+</div>
